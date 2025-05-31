@@ -5,36 +5,39 @@ export default function TabsComponent({ tabValue, onChange }) {
   return (
     <Box sx={{ display: "flex", justifyContent: "center", overflowX: "auto", mb: 6 }}>
       <Tabs
+        orientation="vertical"
         value={tabValue}
         onChange={onChange}
-        variant="scrollable" // hace que en móviles se pueda deslizar
-        scrollButtons="auto" // muestra botones si hace falta
         sx={{
-          "& .MuiTabs-flexContainer": {
-            justifyContent: { xs: "flex-start", md: "center" }, // alineación distinta según el tamaño
-            flexWrap: "wrap", // permite que se ajusten en varias líneas si hay espacio
+          minWidth: 180,
+          borderRight: 1,
+          borderColor: "transparent",
+          "& .MuiTabs-indicator": {
+            left: 0,
+            width: "3px",
+            backgroundColor: "primary.main",
+            transition: "all 0.3s ease",
           },
           "& .MuiTab-root": {
-            color: "text.secondary",
-            fontWeight: 700,
-            fontSize: { xs: 14, sm: 16, md: 18 },
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+            color: "#7c8aa0", // gris azulado
             textTransform: "uppercase",
-            minWidth: 100,
-            px: 1,
-            mr: { xs: 2, sm: 3, md: 4 },
-            letterSpacing: 1,
-            transition: "color 0.3s cubic-bezier(.4,0,.2,1)",
-            transform: "scale(1)",
+            fontWeight: 600,
+            fontSize: 14,
+            pl: 3,
+            py: 1.5,
+            borderLeft: "3px solid transparent",
+            transition: "all 0.3s ease",
             "&.Mui-selected": {
-              transform: "scale(1.1)",
-              color: "primary.main",
+              color: "#ffffff",
             },
           },
         }}
       >
-        <Tab label="ACERCA DE" />
-        <Tab label="EXPERIENCIA" />
-        <Tab label="PROYECTOS" />
+        <Tab label="Acerca de" />
+        <Tab label="Experiencia" />
+        <Tab label="Proyectos" />
       </Tabs>
     </Box>
 

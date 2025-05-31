@@ -383,7 +383,7 @@ function App() {
                     >
                       {[
                         {
-                          title: "App de Clima",
+                          title: "App de Análisis de Comportamiento",
                           description: "Registro y manejo de análisis del comportamiento humano.",
                           image: "/assets/imagen22.jpg", // asegúrate que esté en /public/assets/
                           github: "https://github.com/PESAJU23/analisis",
@@ -515,16 +515,16 @@ function App() {
           </Typography>
           {/* Redes sociales */}
           <Stack direction="row" spacing={2} sx={{ mt: "auto", mb: 2 }}>
-            <IconButton component="a" href="https://github.com/" target="_blank" sx={{ color: "text.secondary" }}>
+            <IconButton component="a" href="https://github.com/PESAJU23" target="_blank" sx={{ color: "text.secondary" }}>
               <GitHubIcon />
             </IconButton>
-            <IconButton component="a" href="https://linkedin.com/" target="_blank" sx={{ color: "text.secondary" }}>
+            <IconButton component="a" href="https://lnkd.in/evpHbnmH" target="_blank" sx={{ color: "text.secondary" }}>
               <LinkedInIcon />
             </IconButton>
             <IconButton component="a" href="https://codepen.io/" target="_blank" sx={{ color: "text.secondary" }}>
               <CodeIcon />
             </IconButton>
-            <IconButton component="a" href="https://instagram.com/" target="_blank" sx={{ color: "text.secondary" }}>
+            <IconButton component="a" href="https://www.instagram.com/pedrojuan2304/" target="_blank" sx={{ color: "text.secondary" }}>
               <InstagramIcon />
             </IconButton>
             <IconButton component="a" href="https://goodreads.com/" target="_blank" sx={{ color: "text.secondary" }}>
